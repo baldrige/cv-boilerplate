@@ -1,54 +1,233 @@
 ---
 # Personal details
-name: Friedrich Nietzsche
+name: Thomas B. Bennett
 address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-phone: "+49 03643 545400"
-email: friedrich@thevoid.de
+- University of Missouri
+- School of Law
+- Hulston Hall 216
+- Columbia, Missouri
+email: thomas.bennett@missouri.edu
+twitter: tommy_bennett
 # Insert URLs without http://
 urls:
-- wki.pe/friedrich_nietzsche
-- twitter.com/tinynietzsche
+- tommybennett.com
+- ssrn.com/author=1348014
 
 # Sections
 
-intro: "I know my fate. One day my name will be associated with the memory of something tremendous --- a crisis without equal on earth, the most profound collision of conscience, a decision that was conjured up against everything that had been believed, demanded, hallowed so far. I am no man, I am dynamite."
-
-skills:
-- Aesthetics, Ethics, Metaphysics, Nihilism
-- Psychology, Ontology, Poetry, Value theory
-- Voluntarism, Tragedy, Fact–value distinction
-- Anti-foundationalism, Philosophy of history
-
 experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philosoph
-  city: Sils-Maria
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-- years: 1867--1868
-  employer: Preußische Artillerie
-  job: Kanonier
-  city: Naumburg
+- years: 2022--23
+  employer: Villanova University
+  schools: Charles Widger School of Law
+  job: Visiting Associate Professor
+  city: Villanova, Pennsylvania
+  courses: 
+- years: 2020--
+  employer: University of Missouri
+  schools: School of Law \amper \ Kinder Institute on Constitutional Democracy
+  job: Associate Professor \amper \ Wall Family Fellow
+  city: Columbia, Missouri
+  courses: 
+    - Civil Procedure I
+    - Civil Procedure II
+    - Constitutional Law
+    - The American Constitution (undergraduate political science)
+  honors: 
+    - Presidential Engagement Fellow (2021--22)
+    - 1L Professor of the Year (2022)
+    - Shook, Hardy \amper \ Bacon LLP Excellence in Research Award (2022)
+- years: 2018--20
+  employer: New York University
+  schools: School of Law
+  job: Furman Academic Fellow
+  city: New York, New York
+
+publications:
+- year: 2023
+  url: papers.ssrn.com/sol3/papers.cfm?abstract_id=4087584
+  title: There Is No Such Thing As Circuit Law
+  volume: 107
+  journal: Minn. L. Rev.
+  pincite: (forthcoming)
+  bullets: 
+    - Argues that federal intermediate appellate courts do not make, find, or apply their own substantive bodies of federal law and explores how the belief that they do has led to mischief across many different areas of law.
+- year: 2022
+  url: papers.ssrn.com/sol3/papers.cfm?abstract_id=3915553
+  title: State Rejection of Federal Law
+  volume: 97
+  journal: Notre Dame L. Rev.
+  pincite: 761
+  bullets:
+    - Argues that state judges, legislators, and electorates respond to federal judicial opinions not only by borrowing them into state law but also in many cases by explicitly rejecting them, creating space for state policy experimentation but also upsetting the policy balance struck by federal case law.
+- year: 2021
+  url: ssrn.com/abstract=3551254
+  title: The Paradox of Exclusive State-Court Jurisdiction Over Federal Claims
+  volume: 105
+  journal: Minn. L. Rev.
+  pincite: 1211
+  bullets:
+    - "Argues that recent changes in the law of individual Article III standing interact with state law to produce a paradox: many federal claims can be brought only in state court, and only in some states, leading to substantial litigation costs and the uneven development of federal law."
+    - Cited in TransUnion v. Ramirez, 141 S. Ct. 2190, 2224 n.9 (2021) (Thomas, J., dissenting).
+    - Awarded the Shook, Hardy \amper \ Bacon LLP Excellence in Research Award.
+- year: 2018
+  url: ssrn.com/abstract=2944208 
+  title: "Divide and Concur: Separate Opinions and Legal Change" 
+  volume: 103
+  journal: Cornell L. Rev.
+  pincite: 817
+  bullets: 
+    - Uses a novel empirical database of Supreme Court concurring opinions created for the article and a global comparative study of separate judicial opinions to argue that separate opinions signal, invite, and catalyze legal change.
+    - Awarded the American Academy of Appellate Lawyers' 2017--2018 Eisenberg Prize for the best article on appellate practice and procedure.
+- year: 2012
+  url: ssrn.com/abstract=2013353
+  title: The Canon at the Water's Edge
+  volume: 87
+  journal: N.Y.U. L. Rev.
+  pincite: 207
+  bullets:
+    - Argues that the presumption against extraterritorial application of statutes has been strengthened as its justification shifted away from promoting international comity and toward ostensibly empirical assumptions about how Congress legislates.
+    - Awarded the Paul D. Kaufman Memorial Award for the outstanding note in the Law Review.
+
+experience2:
+- years: 2014--18
+  employer: Kellogg, Hansen, Todd, Figel \amper \ Frederick, P.L.L.C.
+  schools: 
+    - (formerly Kellogg, Huber, Hansen, Todd, Evans \amper \ Figel, P.L.L.C.)
+  job: Associate
+  city: Washington, D.C.
+- years: 2013--14
+  employer: Hon. Jesse M. Furman
+  schools: 
+    - United States District Court for the Southern District of New York
+  job: Law Clerk
+  city: New York, New York
+- years: 2012--13
+  employer: Hon. Gerard E. Lynch
+  schools:
+    - United States Court of Appeals for the Second Circuit
+  job: Law Clerk
+  city: New York, New York
 
 education:
-- year: 1867
-  subject: Philology
-  institute: Universität Leipzig
-  city: Leipzig
-- year: 1864
-  subject: Abitur
-  institute: Schulpforta
-  city: Naumburg
+- year: 2012
+  institute: New York University School of Law
+  degree: JD
+  latin: magna cum laude
+  honors: 
+  - New York University Law Review, Managing Editor, 2011--12
+  - Law Review Alumni Association Award (third-highest GPA at graduation)
+  - Order of the Coif 
+  - Furman Scholar (exceptional candidates for careers in legal academia)
+  - Frank H. Sommer Memorial Award (outstanding scholarship, character, \amper \ professional activities)
+  - Paul D. Kaufman Memorial Award (outstanding note in the Law Review)
+  - Harry J. Rudick Memorial Award (excellence in taxation)
+  - Butler Scholar (top ten students after the second year)
+  - Pomeroy Scholar (top ten students after the first year)
+  - Orison S. Marden Moot Court, best brief and finalist (spring 2012) 
+- year: 2007
+  subject: History and Philosophy of Politics
+  institute: Swarthmore College
+  degree: BA
+  latin: with honors
+
+presentations:
+- title: There Is No Such Thing as Circuit Law
+  bullets:
+  - host: University of Wisconsin Law School Faculty Speaker Series 
+    year: 2022
+  - host: Works in Progress for Intellectual Property Scholars Colloquium
+  - host: Civil Procedure Workshop, Cardozo School of Law
+- title: State Rejection of Federal Law
+  bullets:
+  - host: Lawyering Scholarship Colloquium, New York University School of Law
+    year: 2020
+  - host: Furman Academic Scholars Workshop, New York University School of Law
+  - host: University of Kansas School of Law Faculty Colloquium
+  - host: University of Tennessee College of Law Faculty Workshop
+    year: 2021
+  - host: Shawnee Trail Regional Conference on American Politics and Constitutionalism
+- title: "The Paradox of Exclusive State-Court Jurisdiction Over Federal Claims"
+  bullets:
+  - host: Junior Faculty Federal Courts Workshop, University of Arkansas School of Law
+    year: 2019
+  - host: Civil Procedure Workshop, University of Texas School of Law
+- title: Congressional Control Over State Jurisdiction
+  bullets:
+  - host: Lawyering Scholarship Colloquium, New York University School of Law
+    year: 2019
+- title: Concurrences as Evidence of the Factors Influencing Judicial Speech Acts
+  bullets:
+  - host: Judicial Speech Acts Workshop, Perry World House, University of Pennsylvania
+    year: 2019
+- title: "Divide and Concur: Separate Opinions and Legal Change"
+  bullets:
+  - host: Princeton Public Law Colloquium (with B. Friedman)
+    year: 2014
+  - host: Soshnick Colloquium on Law and Economics, Northwestern Law School (with B. Friedman and S. Smelcer)
+    year: 2015
+
+symposia:
+- title: 'On Theory: Depoliticizing the Work of Scholars'
+  host: Michael A. Middleton Center for Race, Citizenship, and Justice
+  institution: University of Missouri
+  year: 2022
+- title: The Two Impeachments of Donald Trump
+  host: Missouri Law Review
+  institution: University of Missouri
+  year: 2022
+- title: "Unwritten Rules: Food v. Kuhn at 50"
+  host: Kinder Institute on Constitutional Democracy
+  institution: University of Missouri
+  year: 2022
+- title: "Americans for Prosperity Foundation v. Bonta and Questions of Donor Privacy"
+  host: Federalist Society, Kansas City Lawyers and Kansas Lawyers Chapters
+  year: 2021
+- title: "Enumeration and Supremacy: Federal Power (four-part series)"
+  host: Kinder Institute on Constitutional Democracy
+  institution: University of Missouri
+  year: 2021
+- title: "A New Hope? An Interdisciplinary Reflection on the Constitution, Politics, and Polarization in Jack Balkin's 'The Cycles of Constitutional Time'"
+  host: Missouri Law Review
+  institution: University of Missouri
+  year: 2020
+
+media:
+- title: State Court Will Be Next Frontier for Consumer Class Actions Under Federal Law
+  author: Alison Frankel
+  organization: Reuters
+  year: 2021
+  url: https://www.reuters.com/legal/litigation/state-court-will-be-next-frontier-consumer-class-actions-under-federal-law-2021-06-28/
+- title: Supreme Court Pares Back Class-Action Suits
+  author: Jess Bravin
+  organization: Wall Street Journal
+  year: 2021
+  url: https://www.wsj.com/articles/supreme-court-by-5-4-vote-pares-back-class-action-suits-11624632441
+- title: "Unlikely Bedfellows in TransUnion SCOTUS Case: Justice Thomas and Class Action Fans"
+  author: Alison Frankel
+  organization: Reuters
+  year: 2021
+  url: https://www.reuters.com/article/us-otc-transunion/unlikely-bedfellows-in-transunion-scotus-case-justice-thomas-and-class-action-fans-idUSKBN2B333L
+
+popular:
+- publication: Baseball Prospectus
+  position: Columnist
+  years: 2009--14
+- publication: ESPN.com
+  position: Contributor
+  years: 2010
+
+bars: 
+- state: New York
+  year: 2014
+- state: District of Columbia
+  year: 2015
 
 # Settings
-mainfont: Hoefler Text
-fontsize: 10pt
-lang: en-GB
-geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+documentclass: article
+mainfont: Minion 3
+sansfont: Futura-CondensedExtraBold
+monofont: Consolas
+fontsize: 11pt
+lang: en-US
+geometry: letterpaper, left=35mm, right=30mm, top=30mm, bottom=30mm
 ---

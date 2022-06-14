@@ -1,7 +1,7 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[$fontsize$, a4paper]{article}
+\documentclass[$fontsize$, letterpaper]{article}
 
 % LAYOUT
 %--------------------------------
@@ -9,12 +9,23 @@
 \usepackage{geometry} 
 \geometry{$geometry$}
 
+% Lists
+\usepackage{enumitem}
+\setlist{noitemsep}
+\setlist[itemize]{leftmargin=10pt, topsep=6pt}
+
 % Do not indent paragraphs
 \setlength\parindent{0in}
+
+\usepackage{titlesec}
+\titlespacing{\section}{1ex}{1.5ex}{1.5ex}
 
 % Enable multicolumns
 \usepackage{multicol}
 \setlength{\columnsep}{-3.5cm}
+
+% \clubpenalty = 1000
+% \widowpenalty = 1000
 
 % Uncomment to suppress page numbers
 % \pagenumbering{gobble}
@@ -32,27 +43,31 @@ $endif$
 \usepackage{fontspec} 
 \usepackage{xunicode}
 \usepackage{xltxtra}
+\usepackage{fontawesome}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
+\setsansfont[Ligatures={Common}]{$sansfont$}
+\setmonofont[Ligatures={Common}, Scale=0.82]{$monofont$}
 % Cool ampersand
 \newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
 
 % MARGIN NOTES
 %--------------------------------
 \usepackage{marginnote}
-\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
-\renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{7pt}
+\usepackage{marginfix}
+\newcommand{\note}[1]{\marginnote{\footnotesize #1}}
+\renewcommand*{\raggedrightmarginnote}{}
+\setlength{\marginparsep}{1.5em}
 \reversemarginpar
 
 % HEADINGS
 %--------------------------------
 \usepackage{sectsty} 
 \usepackage[normalem]{ulem} 
-\sectionfont{\rmfamily\mdseries} 
-\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
-\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\sectionfont{\sffamily\mdseries} 
+\subsectionfont{\sffamily\mdseries\scshape\normalsize} 
+\subsubsectionfont{\sffamily\bfseries\upshape\normalsize} 
 
 % PDF SETUP
 %--------------------------------
@@ -64,18 +79,20 @@ $endif$
   pdftitle={$name$'s CV},
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
-  urlcolor=[rgb]{0.117,0.682,0.858},
-  linkcolor=[rgb]{0.117,0.682,0.858},
-  linkcolor=[rgb]{0.117,0.682,0.858},
-  citecolor=[rgb]{0.117,0.682,0.858}
+  urlcolor=[rgb]{0.059,0.471,0.129},
+  linkcolor=[rgb]{0.059,0.471,0.129},
+  linkcolor=[rgb]{0.059,0.471,0.129},
+  citecolor=[rgb]{0.059,0.471,0.129}
 }
 
 % DOCUMENT
 %--------------------------------
 \begin{document}
 
-{\LARGE $name$}\\[.2cm]
+\sffamily\uppercase
+{\huge $name$}
 
+\rmfamily\normalsize
 $if(urls)$
 \begin{multicols}{2}
 $endif$
@@ -84,61 +101,139 @@ $for(address)$
 $address$\\
 $endfor$
 
-\vspace{-10pt}
-
-$phone$\\
-\href{mailto:$email$}{$email$}\\
-
-
 $if(urls)$
 \columnbreak
-
+\texttt{\href{mailto:$email$}{$email$} \faEnvelope\\ }
+\texttt{\href{http://twitter.com/$twitter$}{@$twitter$} \faTwitter\\ }
 $for(urls)$
-\href{http://$urls$}{$urls$}\\
+\texttt{\href{http://$urls$}{$urls$} \faGlobe\\ }
 $endfor$
 \end{multicols}
 $endif$
+\vspace{-18pt}
 
-\vspace{30pt}
-
-$if(intro)$
-$intro$
-$endif$
-
-\subsection*{Areas of Interest}
-$if(skills)$
-\begin{itemize}
-    $for(skills)$
-      \item $skills$
-    $endfor$
-\end{itemize}
-$endif$
-
-% \vfill
-
-\vspace{25pt}
-
-\section*{Previous Experience}
+\section*{ACADEMIC APPOINTMENTS}
 \noindent
 $for(experience)$
-\note{$experience.years$}\textsc{$experience.employer$}\\
-\emph{$experience.job$}\\
-$experience.city$\\[.2cm]
+\par\note{$experience.years$}{$experience.employer$} ($experience.city$)\\
+{$experience.schools$}\\
+\emph{$experience.job$}
+$if(experience.courses)$
+\par Courses taught: \begin{itemize}
+$for(experience.courses)$
+  \item {$experience.courses$}
 $endfor$
+\end{itemize}
+$endif$
+$if(experience.honors)$
+Honors: \begin{itemize}
+$for(experience.honors)$
+  \item {$experience.honors$}
+$endfor$
+\end{itemize}\vspace{6pt}
+$else$
+\vspace{6pt}
+$endif$
+$endfor$
+\vspace{-6pt}
+
+\section*{ACADEMIC PUBLICATIONS}
+\noindent
+$for(publications)$
+\note{$publications.year$}\emph{\href{http://$publications.url$}{$publications.title$}},
+{$publications.volume$} \textsc{$publications.journal$} {$publications.pincite$}
+\begin{itemize}
+  $for(publications.bullets)$
+    \item {$publications.bullets$}
+  $endfor$
+\end{itemize}
+\goodbreak
+$endfor$
+\vspace{-6pt}
+
+\section*{ADDITIONAL LEGAL EXPERIENCE}
+\noindent
+$for(experience2)$
+\note{$experience2.years$}{$experience2.employer$} ($experience2.city$)\\
+$for(experience2.schools)$
+{$experience2.schools$}\\
+$endfor$
+\emph{$experience2.job$}\par\vspace{6pt}
+$endfor$
+\vspace{-6pt}
 
 $if(education)$
-\section*{Education}
+\section*{EDUCATION}
 \noindent
 $for(education)$
-\note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
-\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
-$endfor$
+\note{$education.year$}{$education.institute$}\\
+$education.degree$,
+$if(education.subject)$
+ {$education.subject$},
 $endif$
+$if(education.latin)$
+ \emph{$education.latin$}
+$endif$
+$if(education.honors)$
+\par Honors:
+\begin{itemize}
+$for(education.honors)$
+  \item {$education.honors$}
+$endfor$
+\end{itemize}
+$endif$
+$endfor$
+\vspace{6pt}
+$endif$
+
+\section*{PAPER PRESENTATIONS}
+\noindent
+$for(presentations)$
+\emph{$presentations.title$}
+\begin{itemize}
+  $for(presentations.bullets)$
+    \item $if(presentations.bullets.year)$ \note{$presentations.bullets.year$}$endif${$presentations.bullets.host$}
+    $endfor$
+\end{itemize}
+\par
+$endfor$
+
+\section*{SYMPOSIA \& PANELS}
+\noindent
+$for(symposia)$
+  \filbreak\note{$symposia.year$}\emph{$symposia.title$}\\
+  {$symposia.host$}, {$symposia.institution$}
+  \par\vspace{6pt}
+$endfor$
+\vspace{-6pt}
+
+\section*{SELECTED MEDIA APPEARANCES}
+\noindent
+$for(media)$
+\note{$media.year$}{$media.author$}, \emph{\href{http://$media.url$}{$media.title$}}, \textsc{$media.organization$}
+\par\vspace{6pt}
+$endfor$
+\vspace{-6pt}
+
+\section*{POPULAR WRITING}
+\noindent
+$for(popular)$
+\note{$popular.years$}{$popular.publication$}, {$popular.position$}
+\par\vspace{6pt}
+$endfor$
+\vspace{-6pt}
+
+\section*{BAR ADMISSIONS}
+\noindent
+$for(bars)$
+\note{$bars.year$}{$bars.state$}
+\par\vspace{6pt}
+$endfor$
 
 $if(languages)$
 \section*{Languages}
 $for(languages)$
-\emph{$languages.language$} ($languages.proficiency$)\\
+\emph{$languages.language$} ($languages.proficiency$)
 $endfor$
 $endif$
 
