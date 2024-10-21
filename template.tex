@@ -41,9 +41,9 @@ $endif$
 % TYPOGRAPHY
 %--------------------------------
 \usepackage{fontspec} 
+\usepackage{fontawesome5}
 \usepackage{xunicode}
 \usepackage{xltxtra}
-\usepackage{fontawesome}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
@@ -65,9 +65,9 @@ $endif$
 %--------------------------------
 \usepackage{sectsty} 
 \usepackage[normalem]{ulem} 
-\sectionfont{\sffamily\mdseries} 
-\subsectionfont{\sffamily\mdseries\scshape\normalsize} 
-\subsubsectionfont{\sffamily\bfseries\upshape\normalsize} 
+\sectionfont{\sffamily\mdseries}
+\subsectionfont{\sffamily\mdseries\scshape\normalsize}
+\subsubsectionfont{\sffamily\bfseries\upshape\normalsize}
 
 % PDF SETUP
 %--------------------------------
@@ -79,10 +79,10 @@ $endif$
   pdftitle={$name$'s CV},
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
-  urlcolor=[rgb]{0.059,0.471,0.129},
-  linkcolor=[rgb]{0.059,0.471,0.129},
-  linkcolor=[rgb]{0.059,0.471,0.129},
-  citecolor=[rgb]{0.059,0.471,0.129}
+  urlcolor=[rgb]{0,0.38,1},
+  linkcolor=[rgb]{0,0.38,1},
+  linkcolor=[rgb]{0,0.38,1},
+  citecolor=[rgb]{0,0.38,1}
 }
 
 % DOCUMENT
@@ -119,23 +119,19 @@ $for(experience)$
 {$experience.schools$}\\
 \emph{$experience.job$}
 $if(experience.courses)$
-\par Courses taught: \begin{itemize}
+\par Courses taught: 
 $for(experience.courses)$
-  \item {$experience.courses$}
-$endfor$
-\end{itemize}
+  {$experience.courses$}
+$endfor$\\
 $endif$
 $if(experience.honors)$
-Honors: \begin{itemize}
+Honors: 
 $for(experience.honors)$
-  \item {$experience.honors$}
-$endfor$
-\end{itemize}\vspace{6pt}
+  {$experience.honors$}
+$endfor$\\
 $else$
-\vspace{6pt}
 $endif$
 $endfor$
-\vspace{-6pt}
 
 \section*{ACADEMIC PUBLICATIONS}
 \noindent
@@ -154,13 +150,13 @@ $endfor$
 \section*{ADDITIONAL LEGAL EXPERIENCE}
 \noindent
 $for(experience2)$
-\note{$experience2.years$}{$experience2.employer$} ($experience2.city$)\\
+{$experience2.employer$}\note{$experience2.years$} ($experience2.city$)\\
 $for(experience2.schools)$
 {$experience2.schools$}\\
 $endfor$
-\emph{$experience2.job$}\par\vspace{6pt}
+\emph{$experience2.job$}\par\filbreak\vspace{6pt}
 $endfor$
-\vspace{-6pt}
+\vspace{-12pt}
 
 $if(education)$
 \section*{EDUCATION}
@@ -172,7 +168,7 @@ $if(education.subject)$
  {$education.subject$},
 $endif$
 $if(education.latin)$
- \emph{$education.latin$}
+ \it{$education.latin$}
 $endif$
 $if(education.honors)$
 \par Honors:
@@ -183,8 +179,19 @@ $endfor$
 \end{itemize}
 $endif$
 $endfor$
-\vspace{6pt}
+\vspace{-6pt}
 $endif$
+\filbreak
+
+\section*{ONLINE WRITING}
+\noindent
+$for(online)$
+\note{$online.year$}\emph{\href{http://$online.url$}{$online.title$}}, \textsc{$online.publication$}
+\par{$online.note$}
+\par\vspace{6pt}
+$endfor$
+\vspace{-6pt}
+\filbreak
 
 \section*{PAPER PRESENTATIONS}
 \noindent
@@ -197,11 +204,12 @@ $for(presentations)$
 \end{itemize}
 \par
 $endfor$
+\filbreak
 
 \section*{SYMPOSIA \& PANELS}
 \noindent
 $for(symposia)$
-  \filbreak\note{$symposia.year$}\emph{$symposia.title$}\\
+  \note{$symposia.year$}\emph{$symposia.title$}\\
   {$symposia.host$}, {$symposia.institution$}
   \par\vspace{6pt}
 $endfor$
@@ -210,16 +218,25 @@ $endfor$
 \section*{SELECTED MEDIA APPEARANCES}
 \noindent
 $for(media)$
-\note{$media.year$}{$media.author$}, \emph{\href{http://$media.url$}{$media.title$}}, \textsc{$media.organization$}
-\par\vspace{6pt}
+  \note{$media.year$}\emph{\href{http://$media.url$}{$media.title$}}\\
+  {$media.author$}, \textsc{$media.organization$}
+  \par\vspace{6pt}
+  \filbreak
 $endfor$
 \vspace{-6pt}
+
+\section*{COMMITTEE SERVICE}
+\noindent
+$for(committees)$
+  \note{$committees.year$}{$committees.committee$}
+  \par\vspace{6pt}
+$endfor$
 
 \section*{POPULAR WRITING}
 \noindent
 $for(popular)$
-\note{$popular.years$}{$popular.publication$}, {$popular.position$}
-\par\vspace{6pt}
+  \note{$popular.years$}{$popular.publication$}, {$popular.position$}
+  \par\vspace{6pt}
 $endfor$
 \vspace{-6pt}
 

@@ -2,40 +2,37 @@
 # Personal details
 name: Thomas B. Bennett
 address:
-- University of Missouri
-- School of Law
-- Hulston Hall 216
-- Columbia, Missouri
-email: thomas.bennett@missouri.edu
+- Southern Methodist University
+- Dedman School of Law
+- Storey Hall 215
+email: tbbennett@smu.edu
 twitter: tommy_bennett
 # Insert URLs without http://
 urls:
-- tommybennett.com
 - ssrn.com/author=1348014
 
 # Sections
 
 experience:
+- years: 2024--
+  employer: Southern Methodist University
+  schools: Dedman School of Law
+  job: Associate Professor of Law
+  city: Dallas, Texas
+  courses: Constitutional Law II, Constitutional Law I
+- years: 2020--24
+  employer: University of Missouri
+  schools: School of Law \amper \ Kinder Institute on Constitutional Democracy
+  job: Associate Professor \amper \ Wall Family Fellow
+  city: Columbia, Missouri
+  courses: Civil Procedure I, Civil Procedure II, Constitutional Law, Federal Courts & The Federal System, The American Constitution (undergraduate political science)
+  honors: Presidential Engagement Fellow (2021--22); 1L Professor of the Year (2022); Shook, Hardy \amper \ Bacon LLP Excellence in Research Award (2022)
 - years: 2022--23
   employer: Villanova University
   schools: Charles Widger School of Law
   job: Visiting Associate Professor
   city: Villanova, Pennsylvania
-  courses: 
-- years: 2020--
-  employer: University of Missouri
-  schools: School of Law \amper \ Kinder Institute on Constitutional Democracy
-  job: Associate Professor \amper \ Wall Family Fellow
-  city: Columbia, Missouri
-  courses: 
-    - Civil Procedure I
-    - Civil Procedure II
-    - Constitutional Law
-    - The American Constitution (undergraduate political science)
-  honors: 
-    - Presidential Engagement Fellow (2021--22)
-    - 1L Professor of the Year (2022)
-    - Shook, Hardy \amper \ Bacon LLP Excellence in Research Award (2022)
+  courses: Civil Procedure, Constitutional Law I, Federal Courts
 - years: 2018--20
   employer: New York University
   schools: School of Law
@@ -43,12 +40,28 @@ experience:
   city: New York, New York
 
 publications:
+- year: 2024
+  url: null
+  title: Breaking Kayfabe
+  volume: 89
+  journal: Mo. L. Rev.
+  pincite: __ (forthcoming)
+  bullets:
+    - Argues that Supreme Court judicial rhetoric rarely but notably ascribes doctrinal change to changes in the Court's composition, and offers a qualified defense of this practice.
+- year: 2024
+  url: null
+  title: The Wages of Hitching Wagons
+  volume: 112
+  journal: Ky. L.J.
+  pincite: 661 (invited symposium essay)
+  bullets:
+    - Argues that the practice of lockstepping state law to federal law can introduce instability in state law if federal law is also unstable.
 - year: 2023
   url: papers.ssrn.com/sol3/papers.cfm?abstract_id=4087584
   title: There Is No Such Thing As Circuit Law
   volume: 107
   journal: Minn. L. Rev.
-  pincite: (forthcoming)
+  pincite: 1681
   bullets: 
     - Argues that federal intermediate appellate courts do not make, find, or apply their own substantive bodies of federal law and explores how the belief that they do has led to mischief across many different areas of law.
 - year: 2022
@@ -71,10 +84,10 @@ publications:
     - Awarded the Shook, Hardy \amper \ Bacon LLP Excellence in Research Award.
 - year: 2018
   url: ssrn.com/abstract=2944208 
-  title: "Divide and Concur: Separate Opinions and Legal Change" 
+  title: "Divide and Concur: Separate Opinions and Legal Change"
   volume: 103
   journal: Cornell L. Rev.
-  pincite: 817
+  pincite: 817 (with B. Friedman, A. Martin & S. Smelcer)
   bullets: 
     - Uses a novel empirical database of Supreme Court concurring opinions created for the article and a global comparative study of separate judicial opinions to argue that separate opinions signal, invite, and catalyze legal change.
     - Awarded the American Academy of Appellate Lawyers' 2017--2018 Eisenberg Prize for the best article on appellate practice and procedure.
@@ -130,22 +143,36 @@ education:
   degree: BA
   latin: with honors
 
+online:
+- title: Habeas, Hail Mary, and the Hook and Ladder
+  url: https://conlaw.jotwell.com/habeas-hail-mary-and-the-hook-and-ladder/
+  publication: JOTWELL
+  note: (reviewing Z. Payvand Adhout, Direct Collateral Review, 121 Colum. L. Rev. 159 (2021))
+  year: 2021
+
 presentations:
+- title: Breaking Kayfabe
+  bullets:
+  - host: Washington University of School of Law Convening on Judicial Decisionmaking
+    year: 2023
+  - host: University of Iowa College of Law Faculty Workshop
 - title: There Is No Such Thing as Circuit Law
   bullets:
   - host: University of Wisconsin Law School Faculty Speaker Series 
     year: 2022
   - host: Works in Progress for Intellectual Property Scholars Colloquium
   - host: Civil Procedure Workshop, Cardozo School of Law
+  - host: Junior Faculty Federal Courts Workshop, University of Florida
 - title: State Rejection of Federal Law
   bullets:
+  - host: University of Tennessee College of Law Faculty Workshop
+    year: 2021
+  - host: Shawnee Trail Regional Conference on American Politics and Constitutionalism
   - host: Lawyering Scholarship Colloquium, New York University School of Law
     year: 2020
   - host: Furman Academic Scholars Workshop, New York University School of Law
   - host: University of Kansas School of Law Faculty Colloquium
-  - host: University of Tennessee College of Law Faculty Workshop
-    year: 2021
-  - host: Shawnee Trail Regional Conference on American Politics and Constitutionalism
+
 - title: "The Paradox of Exclusive State-Court Jurisdiction Over Federal Claims"
   bullets:
   - host: Junior Faculty Federal Courts Workshop, University of Arkansas School of Law
@@ -161,12 +188,25 @@ presentations:
     year: 2019
 - title: "Divide and Concur: Separate Opinions and Legal Change"
   bullets:
-  - host: Princeton Public Law Colloquium (with B. Friedman)
-    year: 2014
   - host: Soshnick Colloquium on Law and Economics, Northwestern Law School (with B. Friedman and S. Smelcer)
     year: 2015
+  - host: Princeton Public Law Colloquium (with B. Friedman)
+    year: 2014
+
 
 symposia:
+- title: Missouri v. Biden Discussion
+  host: Missouri Lawyers Chapters Conference
+  institution: Federalist Society
+  year: 2024
+- title: Article III Standing To Sue---Understanding Injuries (invited commenter)
+  host: University of Chicago Constitutional Law Institute
+  institution: University of Chicago School of Law
+  year: 2023
+- title: State Supreme Courts and the Great American Experiment
+  host: Kentucky Law Journal
+  institution: University of Kentucky, J. David Rosenberg College of Law
+  year: 2023
 - title: 'On Theory: Depoliticizing the Work of Scholars'
   host: Michael A. Middleton Center for Race, Citizenship, and Justice
   institution: University of Missouri
@@ -180,18 +220,59 @@ symposia:
   institution: University of Missouri
   year: 2022
 - title: "Americans for Prosperity Foundation v. Bonta and Questions of Donor Privacy"
-  host: Federalist Society, Kansas City Lawyers and Kansas Lawyers Chapters
+  host: Kansas City Lawyers and Kansas Lawyers Chapters
+  institution: Federalist Society
   year: 2021
 - title: "Enumeration and Supremacy: Federal Power (four-part series)"
   host: Kinder Institute on Constitutional Democracy
   institution: University of Missouri
   year: 2021
-- title: "A New Hope? An Interdisciplinary Reflection on the Constitution, Politics, and Polarization in Jack Balkin's 'The Cycles of Constitutional Time'"
+- title: "A New Hope? An Interdisciplinary Reflection on the Constitution, Politics, and Polarization in Jack Balkin's &ldquo;The Cycles of Constitutional Time&rdquo;"
   host: Missouri Law Review
   institution: University of Missouri
   year: 2020
 
 media:
+- title: No Judge Shopping for TikTok
+  author: Alison Frankel
+  organization: Reuters
+  year: 2024
+  url: https://www.reuters.com/legal/transactional/column-no-judge-shopping-tiktok-2024-05-08/
+- title: US Supreme Court Clears Path for Plaintiffs To Pick Where To Sue Corporations
+  author: Alison Frankel
+  organization: Reuters
+  year: 2023
+  url: https://www.reuters.com/legal/government/column-us-supreme-court-clears-path-plaintiffs-pick-where-sue-corporations-2023-06-28/
+- title: The Judicial Deus Ex Machina Debt Ceiling Option
+  author: David Dayen
+  organization: The American Prospect
+  year: 2023
+  url: https://prospect.org/economy/2023-05-12-judicial-deus-ex-machina-debt-ceiling-option/
+- title: Five Things You Need To Know To Start Your Day
+  author: Liza Tetley & Joe Weisenthal
+  organization: Bloomberg
+  year: 2023
+  url: https://www.bloomberg.com/news/newsletters/2023-05-11/five-things-you-need-to-know-to-start-your-day
+- title: What's At Stake For Biden's Student Loan Plan at the Supreme Court
+  author: Madeline Halpert
+  organization: BBC
+  year: 2023
+  url: https://www.bbc.com/news/world-us-canada-64752727
+- title: Here's How the Supreme Court Could Rule on Student Loan Forgiveness
+  author: Katie Reilly
+  organization: Time
+  year: 2022
+  url: https://time.com/6235974/supreme-court-student-loan-forgiveness/
+- title: Kavanaugh Gun Case Opinion Could Help Uphold Future Regulations
+  author: Lydia Wheeler & Kimberly Strawbridge Robinson
+  organization: Bloomberg Law
+  year: 2022
+  url: https://news.bloomberglaw.com/us-law-week/kavanaugh-gun-case-opinion-could-help-uphold-future-regulations
+- title: Brett Kavanaugh's Concurrence Could Limit Court's Extreme Gun Decision in Future Cases
+  author: Paul Blumenthal
+  organization: The Huffington Post
+  year: 2022
+  url: https://www.huffpost.com/entry/bruen-gun-control-kavanaugh_n_62b4d4f7e4b04a617367cc42
 - title: State Court Will Be Next Frontier for Consumer Class Actions Under Federal Law
   author: Alison Frankel
   organization: Reuters
@@ -207,6 +288,22 @@ media:
   organization: Reuters
   year: 2021
   url: https://www.reuters.com/article/us-otc-transunion/unlikely-bedfellows-in-transunion-scotus-case-justice-thomas-and-class-action-fans-idUSKBN2B333L
+
+committees: 
+- committee: Curriculum/Academic Standards
+  year: 2024--
+- committee: Library & Technology
+  year: 2024--
+- committee: Admissions
+  year: 2023--24
+- committee: Library
+  year: 2023--24
+- committee: Diversity, Wellness, & Climate
+  year: 2020--22
+- committee: Clerkships
+  year: 2020--22
+- committee: Hiring (VAP)
+  year: 2021--22
 
 popular:
 - publication: Baseball Prospectus
@@ -224,10 +321,10 @@ bars:
 
 # Settings
 documentclass: article
-mainfont: Minion 3
-sansfont: Futura-CondensedExtraBold
-monofont: Consolas
+mainfont: BASKVILL.ttf
+sansfont: Futura-CondensedExtraBold.ttf
+monofont: consola.ttf
 fontsize: 11pt
 lang: en-US
-geometry: letterpaper, left=35mm, right=30mm, top=30mm, bottom=30mm
+geometry: letterpaper, left=40mm, right=30mm, top=37mm, bottom=37mm
 ---
